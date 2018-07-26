@@ -7,7 +7,7 @@ defmodule PlugIdColumn do
   def init(options), do: options
 
   def call(conn, _opts) do
-      conn |> register_before_send(&TudoPlug.HandleIDKey.call_back/1)
+      conn |> Plug.Conn.register_before_send(&TudoPlug.HandleIDKey.call_back/1)
   end
 
   def call_back(%{resp_body: resp_body, params: %{"id_column" => key}}=conn) do
