@@ -18,7 +18,7 @@ defmodule PlugIdColumn do
       {:ok, body} <- encoder.encode_to_iodata(body) do
         %{conn | resp_body: body}
       else 
-        error ->
+        _error ->
           conn
     end
   end
