@@ -36,7 +36,7 @@ defmodule PlugIdColumn.MixProject do
       # These are the default files included in the package
       files: ["lib", "mix.exs", "README*"],
       licenses: ["MIT"],
-      links: %{"GitHub" => "https://github.com/elixir-ecto/postgrex"}
+      links: %{"GitHub" => "https://github.com/mobile-ways/plug-id-column"}
     ]
   end
 
