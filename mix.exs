@@ -30,9 +30,12 @@ defmodule PlugIdColumn.MixProject do
     [
       # This option is only needed when you don't want to use the OTP application name
       name: "plug-id-column",
+      maintainers: [
+        "Kishore Relangi"
+      ],
       # These are the default files included in the package
       files: ["lib", "mix.exs", "README*"],
-      licenses: ["Apache 2.0"],
+      licenses: ["MIT"],
       links: %{"GitHub" => "https://github.com/elixir-ecto/postgrex"}
     ]
   end
